@@ -17,9 +17,7 @@ var score = 0;
 
 function preload() {
     getBackgroundImg();
-    if(!backgroundImg){
-        backgroundImg = loadImage(bg); 
-    }
+    
 }
 
 function setup(){
@@ -61,6 +59,9 @@ function setup(){
 }
 
 function draw(){
+    if(!backgroundImg){
+        backgroundImg = loadImage(bg); 
+    }
     if(backgroundImg)
         background(backgroundImg);
     
